@@ -35,9 +35,9 @@ namespace SokszogProjekt.Model
             if (obj is RegularTriangle)
             {
                 RegularTriangle rt = (RegularTriangle)obj;
-                if (sideLength > rt.SideLength)
+                if (sideLength < rt.SideLength)
                     return 1;
-                else if (sideLength < rt.sideLength)
+                else if (sideLength > rt.sideLength)
                     return -1;
                 else
                     return 0;
